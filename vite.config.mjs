@@ -10,6 +10,8 @@ export default defineConfig(({ mode }) => {
 
   return {
     server: {
+      // bind to all network interfaces
+      host: '0.0.0.0',
       // this ensures that the browser opens upon server start
       open: true,
       port: PORT
@@ -30,6 +32,8 @@ export default defineConfig(({ mode }) => {
       //     ]
     },
     preview: {
+      // bind to all network interfaces
+      host: '0.0.0.0',
       // this ensures that the browser opens upon preview start
       open: true,
       port: PORT
